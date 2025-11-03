@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowUp - Tu tienda de maquillaje</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/estilop.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-palette2 me-2"><img src="../img/logo.png" alt="GlowUp" height="40"></i>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    
+                    <!-- Primer dropdown - Análisis Estructurado -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAnalisis" data-bs-toggle="dropdown">
+                            Analisis Estructurado
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAnalisis">
+                            <li><a class="dropdown-item" href="../paginas/modeloambiental.html">Modelo Ambiental</a></li>
+                            <li><a class="dropdown-item" href="../paginas/modeloComportamiento.html">Modelo de Comportamiento</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="../paginas/modeloPOO.html">Modelo Orientado a objetos</a></li>
+                    
+                    <!-- Segundo dropdown - Diagramas -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDiagramas" data-bs-toggle="dropdown">
+                            Diagramas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownDiagramas">
+                            <li><a class="dropdown-item" href="../paginas/casosUso.html">Diagrama de Casos de Uso</a></li>
+                            <li><a class="dropdown-item" href="#">Diagrama de Secuencia</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="../paginas/productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Video Explicativo</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../paginas/integrantes.html">
+                            <i class="bi bi-people-fill me-1"></i> Integrantes
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex">
+                    <a href="#" class="nav-link me-3"><i class="bi bi-search"></i></a>
+                    <a href="#" class="nav-link me-3"><i class="bi bi-person"></i></a>
+                    <a href="#" class="nav-link"><i class="bi bi-bag"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="py-5">
+        <div class="container">
+            <h1 class="section-title">PRODUCTOS</h1>
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <h4>Envío Gratis</h4>
+                        <p>En compras superiores a $50. Recibe tus productos en 24-48 horas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+                        <h4>Devolución Fácil</h4>
+                        <p>30 días para devolver tus productos si no estás satisfecho.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4>Productos Originales</h4>
+                        <p>Todos nuestros productos son 100% originales y de alta calidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="product-img" alt="Paleta de sombras">
+                        <div class="product-info">
+                            <h5 class="product-title">Paleta de Sombras Glow</h5>
+                            <p class="product-price">$24.99</p>
+                            <a href="#" class="btn btn-primary btn-sm">Añadir al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <img src="../img/base.webp" class="product-img" alt="Base de maquillaje">
+                        <div class="product-info">
+                            <h5 class="product-title">Base Líquida Matte</h5>
+                            <p class="product-price">$19.99</p>
+                            <a href="#" class="btn btn-primary btn-sm">Añadir al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="product-img" alt="Labial líquido">
+                        <div class="product-info">
+                            <h5 class="product-title">Labial Líquido Mate</h5>
+                            <p class="product-price">$14.99</p>
+                            <a href="#" class="btn btn-primary btn-sm">Añadir al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <img src="../img/kit_de_broch.webp" class="product-img" alt="Brochas profesionales">
+                        <div class="product-info">
+                            <h5 class="product-title">Set de Brochas Profesional</h5>
+                            <p class="product-price">$29.99</p>
+                            <a href="#" class="btn btn-primary btn-sm">Añadir al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">Ver Todos los Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestras clientas</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Los productos de GlowUp han transformado completamente mi rutina de maquillaje. La calidad es increíble y los precios son muy accesibles."</p>
+                        <p class="testimonial-author">- María González</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Me encanta la paleta de sombras que compré. Los colores son vibrantes y se mezclan perfectamente. Definitivamente volveré a comprar."</p>
+                        <p class="testimonial-author">- Ana López</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"El servicio al cliente es excelente y el envío fue super rápido. Los productos llegaron perfectamente empaquetados. 100% recomendado."</p>
+                        <p class="testimonial-author">- Carla Rodríguez</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-md-6 mb-4">
+                    <img src="../img/Umsa-logo.svg.png" alt="">
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <p>
+                      <p> Universidad Mayor de San Andrés	</p>
+                       <p>Carrera de Informática</p>
+                        <p>Análisis y Diseño de Sistemas</p>
+                    
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Suscríbete para recibir ofertas exclusivas y novedades sobre nuevos productos.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2023 GlowUp. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
