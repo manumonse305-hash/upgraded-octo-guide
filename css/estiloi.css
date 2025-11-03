@@ -76,119 +76,17 @@
             color: var(--white);
         }
         
-        .hero-title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-        
+       
         .hero-subtitle {
             font-size: 1.2rem;
             margin-bottom: 2rem;
             max-width: 600px;
         }
+      
         
-        .btn-hero {
-            background-color: var(--dark-pink);
-            color: var(--primary-pink);
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: 2px solid var(--white);
-        }
+       
         
-        .btn-hero:hover {
-            background-color: transparent;
-            color: var(--white);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .feature-card {
-            background-color: var(--white);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-        
-        .feature-icon {
-            font-size: 3rem;
-            color: var(--dark-pink);
-            margin-bottom: 1.5rem;
-        }
-        
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--dark-pink);
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-        
-        .product-card {
-            background-color: var(--white);
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-            margin-bottom: 30px;
-        }
-        
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-        
-        .product-img {
-            height: 250px;
-            object-fit: cover;
-            width: 100%;
-        }
-        
-        .product-info {
-            padding: 20px;
-        }
-        
-        .product-title {
-            font-weight: 600;
-            color: var(--dark-pink);
-            margin-bottom: 10px;
-        }
-        
-        .product-price {
-            font-weight: 700;
-            color: var(--primary-pink);
-            font-size: 1.2rem;
-        }
-        
-        .testimonial-card {
-            background-color: var(--white);
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--dark-pink);
-        }
-        
+       
         .footer {
             background: linear-gradient(135deg, var(--primary-pink), var(--dark-pink));
             color: black;
@@ -257,3 +155,152 @@
         .col-lg-1 img{
             width: 100px;
         }
+        .integrantes-lista-compacta{
+            color: black;
+        }
+/* Estilos mejorados para la lista de integrantes */
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, var(--white), var(--light-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--light-pink);
+    font-weight: 300;
+}
+
+.integrantes-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.integrantes-icon {
+    font-size: 3rem;
+    color: var(--dark-pink);
+    margin-bottom: 0.5rem;
+}
+
+.integrantes-subtitle {
+    font-size: 0.8rem;
+    color: var(--dark-pink);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.integrantes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.integrante-item {
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    padding: 0.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--dark-pink);
+}
+
+.integrante-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-left-color: var(--gold);
+}
+
+.integrante-avatar {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--dark-pink), var(--primary-pink));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.integrante-avatar i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.integrante-info {
+    text-align: left;
+    flex: 1;
+}
+
+.integrante-info h4 {
+    color: var(--dark-pink);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.integrante-info p {
+    color: #666;
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .integrantes-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .integrante-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1rem;
+    }
+    
+    .integrante-avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .integrante-info {
+        text-align: center;
+    }
+    
+    .integrante-info h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .integrantes-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .integrante-avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .integrante-avatar i {
+        font-size: 1.5rem;
+    }
+}
